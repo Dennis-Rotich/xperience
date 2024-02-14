@@ -1,8 +1,4 @@
-import React,{useEffect,useState} from 'react';
-import { Routes,Route } from 'react-router-dom';
-import Home from './components/Home.jsx';
-import './App.css'
-import Navbar from './components/Navbar.jsx'
+
 
 function App() {
   const [products,setProducts]=useState([])
