@@ -7,8 +7,9 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path ='/about'element ={<About/>}/> 
         {/* Define the route tags here */}
+        <Route path ='/about'element ={<About/>}/> 
+        
       </Routes>
     </div>
   );
