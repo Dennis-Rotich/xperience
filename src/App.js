@@ -1,9 +1,4 @@
-import React,{useEffect,useState} from 'react';
-import './App.css';
-import Contacts from './components/Contacts';
-import { Routes, Route } from 'react-router-dom';
-import About from './components/About'; // Assuming you want to include the About component
-import Navbar from './components/Navbar'; // Assuming you want to include the Navbar component
+import {useEffect,useState} from 'react';
 import Home from './components/Home';
 
 function App() {
@@ -24,8 +19,6 @@ function App() {
       <Navbar/>
       <Routes>
         {/* Define the route tags here */}
-        <Route path="/contacts" element={<Contacts/>}/>
-        <Route path="/about" element={<About/>}/> 
         <Route path='/' element={<Home products={products}/>}/>
       </Routes>
     </div>
