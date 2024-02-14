@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Contacts from './Contacts'
 import { Routes,Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 
@@ -9,7 +10,7 @@ function App() {
       <h1>Xperience</h1>
       <Navbar/>
       <Routes>
-        {/* Define the route tags here */}
+        <Route path="/contacts" element={<Contacts/>}/>
       </Routes>
     </div>
   );
