@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Contacts from './components/Contacts'
-import { Routes,Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Contacts from './components/Contacts';
+import { Routes, Route } from 'react-router-dom';
+import About from './components/About'; // Assuming you want to include the About component
+import Navbar from './components/Navbar'; // Assuming you want to include the Navbar component
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/about" element={<About/>}/> 
       </Routes>
     </div>
   );
