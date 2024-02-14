@@ -12,3 +12,32 @@
     float: right;
     margin-right: 120px;
 }
+
+.sidebarLink{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.sidebarLink:hover{
+    text-decoration: underline;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    background-color: darkslategray;
+    height: 100vh;
+}
+#products{
+    background-color: darkslategray;
+}
+.sidebarProducts{
+    color: white;
+}
+span{
+    color: firebrick;
+}
+#appTitle{
+    margin-left: 50px;
+    color: darkslategray;
+}
