@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Routes,Route } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div>
+      <h1>Xperience</h1>
+      <Navbar/>
       <Routes>
         {/* Define the route tags here */}
       </Routes>
