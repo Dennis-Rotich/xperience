@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <h1 id='appTitle'><span>X</span>perience</h1>
+      <h1 id='appTitle'><span id='appHeader'>X</span>perience</h1>
       <Navbar/>
       <Routes>
         {/* Define the route tags here */}
