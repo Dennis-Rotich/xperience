@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect,useState} from 'react';
+import { Routes,Route } from 'react-router-dom';
+import Home from './components/Home.jsx';
+import './App.css'
+import Navbar from './components/Navbar.jsx'
 
 function App() {
+  const [products,setProducts]=useState([])
+
+  useEffect(()=>{
+    fetch('https://fakestoreapi.com/products')
+    .then(res => res.json())
+    .then((data)=>{
+      setProducts(data)
+    })
+    .catch(err => console.error(err))
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 id='appTitle'><span>X</span>perience</h1>
+      <Navbar/>
+      <Routes>
+        {/* Define the route tags here */}
+        <Route path='/' element={<Home products={products}/>}/>
+      </Routes>
     </div>
   );
 }
