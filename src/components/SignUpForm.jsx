@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function SignUpForm() {
+function SignUpForm({setName}) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fname: '', lname: '', email: '', password: '', confirmPassword: ''
   });
@@ -21,6 +23,8 @@ function SignUpForm() {
       password: '',
       confirmPassword: ''
     });
+    setName(e.target.fname.value);
+    navigate('/')
   }
   return (
     <div>

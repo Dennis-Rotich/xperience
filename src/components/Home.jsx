@@ -3,12 +3,16 @@ import {Link} from 'react-router-dom';
 
 function Home({ products, setProducts }){
     const [isProductsOpen, setIsProductsOpen] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState('null');
+    const [selectedCategory, setSelectedCategory] = useState(false);
+    const toggleProductsDropdown = () => {
+        setIsProductsOpen(!isProductsOpen);
+    };
 
     //handle click function
     const handleCategoryClick= (category) =>{
         console.log('category:', category);
         setSelectedCategory(category);
+        setProducts(filterProducts);
     };
 
 
@@ -16,11 +20,7 @@ function Home({ products, setProducts }){
     const filterProducts= selectedCategory ? products.filter(product => product.category === selectedCategory) : products;
 
     console.log('Filter products:', filterProducts);
-    setProducts(filterProducts);
-
-    const toggleProductsDropdown = () => {
-        setIsProductsOpen(!isProductsOpen);
-    };
+    
 
     const displayProducts = products.map((product,index)=>{
         return(
@@ -32,14 +32,14 @@ function Home({ products, setProducts }){
             </span>
         )
     })
-    const displayFilteredProducts = filterProducts.map((product, index) => (
-        <span className="productDisplay" key={index}>
-            <Link className="productLink" to={`/productDetails/${product.id}`}>
-                <img src={product.image} alt={product.title} className="productImage"/>
-                <p className="priceTag">Price: ${product.price}</p>
-            </Link>
-        </span>
-    ));
+    // const displayFilteredProducts = filterProducts.map((product, index) => (
+    //     <span className="productDisplay" key={index}>
+    //         <Link className="productLink" to={`/productDetails/${product.id}`}>
+    //             <img src={product.image} alt={product.title} className="productImage"/>
+    //             <p className="priceTag">Price: ${product.price}</p>
+    //         </Link>
+    //     </span>
+    // ));
 
     return(
         <div>
@@ -51,7 +51,7 @@ function Home({ products, setProducts }){
                         <br/>
                         <Link className="productList" onClick={() => handleCategoryClick("men's clothing")}  >Men's Clothing</Link>
                         <br/>
-                        <Link className="productList" onClick={() => handleCategoryClick("jewellery")}  >Jewelry</Link>
+                        <Link className="productList" onClick={() => handleCategoryClick("jewelery")}  >Jewelery</Link>
                         <br/>
                         <Link className="productList" onClick={() => handleCategoryClick("electronics")} >Electronics</Link>
                     </div>)}
@@ -60,8 +60,7 @@ function Home({ products, setProducts }){
                 <Link className="productList">Social Media</Link>
             </aside>
             <main>
-                {selectedCategory? displayFilteredProducts: displayProducts}
-
+                {displayProducts}
             </main>
         </div>
     )

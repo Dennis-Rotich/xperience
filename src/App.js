@@ -13,6 +13,7 @@ import './App.css';
 function App() {
   const [products, setProducts] = useState([]);
   const [cartProducts,setCartProducts] = useState([]);
+  const [name,setName] = useState('');
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
@@ -28,13 +29,14 @@ function App() {
       <h1 className='appTitle'>
         <span className='appHeader'>X</span>perience
       </h1>
-      <Navbar products={products} setProducts={setProducts}/>
+      <h3>Logged in as: {name}</h3>
+      <Navbar products={products} setProducts={setProducts} />
       <br />
       <Routes>
-        <Route path='/' element={<Home products= {filteredProducts} setProducts={setProducts} />} />
+        <Route path='/' element={<Home products= {products} setProducts={setProducts} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
-        <Route path='/signUpForm' element={<SignUpForm />} />
+        <Route path='/signUpForm' element={<SignUpForm setName={setName}/>} />
         <Route path='/payments' element={<Payments />} />
         <Route path='/cart' element={<Cart  cartProducts={cartProducts}/>} />
         <Route path='/productDetails/:id' element={<ProductDetails products={products} cartProducts={cartProducts} setCartProducts={setCartProducts}/> }/>

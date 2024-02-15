@@ -34,7 +34,8 @@ aside{
 .productList{
   color: white;
   text-decoration: none;
-  padding: 2em 0 2em 0;
+  padding: 2em 10px 2em 10px;
+  margin: 5px 5px 5px 5px;
 }
 
 .productList:hover{
