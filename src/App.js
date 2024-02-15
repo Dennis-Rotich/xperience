@@ -31,13 +31,13 @@ function App() {
       <Navbar products={products} setProducts={setProducts}/>
       <br />
       <Routes>
-        <Route path='/' element={<Home products={products} />} />
+        <Route path='/' element={<Home products= {filteredProducts} setProducts={setProducts} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route path='/signUpForm' element={<SignUpForm />} />
         <Route path='/payments' element={<Payments />} />
         <Route path='/cart' element={<Cart  cartProducts={cartProducts}/>} />
-        <Route path='/productDetails/:id' element={<ProductDetails products={products} cartProducts={cartProducts} setCartProducts={setCartProducts}/>}/>
+        <Route path='/productDetails/:id' element={<ProductDetails products={products} cartProducts={cartProducts} setCartProducts={setCartProducts}/> }/>
       </Routes>
     </div>
   );
