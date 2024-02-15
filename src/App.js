@@ -23,16 +23,12 @@ function App() {
       .catch((err) => console.error(err));
   }, []);
 
-  useEffect(()=>{
-    console.log('Cart Products',cartProducts);
-  },[cartProducts])
-
   return (
     <div>
-      <h1 id='appTitle'>
-        <span id='appHeader'>X</span>perience
+      <h1 className='appTitle'>
+        <span className='appHeader'>X</span>perience
       </h1>
-      <Navbar />
+      <Navbar products={products} setProducts={setProducts}/>
       <br />
       <Routes>
         <Route path='/' element={<Home products={products} />} />

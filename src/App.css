@@ -13,11 +13,11 @@
   padding-right: 75px;
 }
 
-#appHeader{
+.appHeader{
   color: firebrick;
 }
 
-#appTitle{
+.appTitle{
   padding-left: 2em;
   color: darkslategray;
 }
@@ -26,7 +26,7 @@ aside{
   display: inline-flex;
   flex-direction: column;
   background-color: darkslategray;
-  width: 120px;
+  width: 150px;
   height: 100vh;
   float: left;
 }
@@ -48,6 +48,7 @@ aside{
   border: solid black 2px;
   padding: 10px;
   margin: 10px;
+  box-shadow: gray 2px 2px 2px 2px;
 }
 
 .productDisplay:hover{
@@ -75,4 +76,21 @@ aside{
 
 .navBtn{
   margin-left: 10px;
+}
+
+.priceTag{
+  font-size: large;
+  font-weight: bold;
+}
+
+.goBackButton{
+  float: left;
+}
+
+.dropdown-toggle{
+  color: white;
+}
+
+.dropdown-toggle:hover{
+  text-decoration: underline;
 }

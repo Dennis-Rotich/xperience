@@ -10,6 +10,7 @@ function ProductDetails({products,cartProducts,setCartProducts}){
 
     function handleAddToCart(product){
         setCartProducts([...cartProducts,product]);
+        navigate('/cart')
     }
 
     function handleHomeNavigate(){
