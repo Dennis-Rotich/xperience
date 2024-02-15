@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   const [products,setProducts]=useState([])
+  const [cartProducts,setCartProducts]=useState([]);
 
   useEffect(()=>{
     fetch('https://fakestoreapi.com/products')
@@ -25,7 +26,7 @@ function App() {
       <Navbar/>
       <br/>
       <Routes>
-        <Route path='/' element={<Home products={products}/>}/>
+        <Route path='/' element={<Home products={products} cartProducts={cartProducts} setCartProducts={setCartProducts}/>}/>
         <Route path='/about' element={<About />}/>
         <Route path='/contacts' element={<Contacts />}/>
         <Route path='/signUpForm' element={<SignUpForm/>}/>
