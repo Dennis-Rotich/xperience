@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 
 function Navbar(){
     return(
-        <div id="navbar">
-            <NavLink to='/' className='navlink'>Home</NavLink> 
-            <NavLink to='/contacts' className='navlink'>Contact</NavLink>
+        <nav>
+            <NavLink to='/' className='navlink'>Home</NavLink>
             <NavLink to='/about' className='navlink'>About</NavLink>
-            <NavLink to='/SignUpForm' className='navlink'>Sign up</NavLink>
-            <form id="searchBar">
-                <input type="text" placeholder="Search for product" name="search"/>
-                <input type="submit" name="submit"/>
+            <NavLink to='/contacts' className='navlink'>Contacts</NavLink>
+            <NavLink to='/SignUpForm' className='navlink'>Sign Up</NavLink>
+            <form id="searchProduct">
+                <input type="text" placeholder="search for product" name="search"/>
+                <input type="submit" id="submit"/>
             </form>
-        </div>
+        </nav>
     )
 }
 
-export default Navbar
+export default Navbar;

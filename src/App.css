@@ -1,14 +1,55 @@
 .navlink{
-    padding: 25px;
-    color: black;
-    text-decoration: none;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
 }
 
 .navlink:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-#searchBar{
-    float: right;
-    margin-right: 120px;
+#searchProduct{
+  float: right;
+  padding-right: 75px;
+}
+
+#appHeader{
+  color: firebrick;
+}
+
+#appTitle{
+  padding-left: 2em;
+  color: darkslategray;
+}
+
+aside{
+  display: inline-flex;
+  flex-direction: column;
+  background-color: darkslategray;
+  width: 120px;
+  height: 100vh;
+  float: left;
+}
+
+.productList{
+  color: white;
+  text-decoration: none;
+  padding: 2em 0 2em 0;
+}
+
+.productList:hover{
+  text-decoration: underline;
+}
+
+.productDisplay{
+  display: inline-flex;
+  width: 20em;
+  height: 15em;
+  border: solid black 2px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.productDisplay:hover{
+  scale: 1.1;
 }
