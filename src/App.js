@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from './components/About';
@@ -6,7 +5,7 @@ import Contacts from './components/Contacts';
 import Home from './components/Home';
 import SignUpForm from './components/SignUpForm';
 import Navbar from './components/Navbar';
-import Payments from './components/Payments'
+import Payments from './components/Payments';
 import './App.css';
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
       <Navbar />
       <br />
       <Routes>
-        <Route path="/payments" element={<Payments/>}/>
+        <Route path="/payments" element={<Payments />} />
         <Route path='/' element={<Home products={products} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contacts' element={<Contacts />} />
@@ -40,4 +39,3 @@ function App() {
 }
 
 export default App;
-
