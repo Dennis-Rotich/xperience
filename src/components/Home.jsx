@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 
-function Home({products}){
+function Home({products,cartProducts,setCartProducts}){
     function handleClick(product){
-        console.log(product);
+        setCartProducts([...cartProducts,product]);
     }
 
     const displayProducts = products.map((product,index)=>{
