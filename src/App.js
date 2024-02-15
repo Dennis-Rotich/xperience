@@ -21,7 +21,9 @@ function App() {
 
   return (
     <div>
+      <h1 id='appTitle'><span id='appHeader'>X</span>perience</h1>
       <Navbar/>
+      <br/>
       <Routes>
         <Route path='/' element={<Home products={products}/>}/>
         <Route path='/about' element={<About />}/>
