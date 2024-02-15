@@ -31,10 +31,6 @@ aside{
   float: left;
 }
 
-main{
-  
-}
-
 .productList{
   color: white;
   text-decoration: none;
@@ -52,4 +48,8 @@ main{
   border: solid black 2px;
   padding: 10px;
   margin: 10px;
+}
+
+.productDisplay:hover{
+  scale: 1.1;
 }
