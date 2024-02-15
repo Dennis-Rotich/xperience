@@ -53,3 +53,26 @@ aside{
 .productDisplay:hover{
   scale: 1.1;
 }
+
+.productLink{
+    display: inline-flex;
+    width: 15em;
+    height: 10em;
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.productDetail{
+  height: 100px;
+}
+
+.productImage{
+  height: 200px;
+  width: 200px;
+}
+
+.navBtn{
+  margin-left: 10px;
+}
