@@ -1,4 +1,10 @@
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
+import { Routes,Route } from 'react-router-dom';
+import About from './components/About';
+import Contacts from './components/Contacts';
+import Home from './components/Home';
+import SignUpForm from './components/SignUpForm';
+import Navbar from './components/Navbar';
 import './App.css';
 
 function App() {
@@ -14,21 +20,14 @@ function App() {
   },[])
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home products={products}/>}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/contacts' element={<Contacts />}/>
+        <Route path='/signUpForm' element={<SignUpForm/>}/>
+      </Routes>
     </div>
   );
 }
