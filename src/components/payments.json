@@ -1,0 +1,104 @@
+{
+  "Payments": [
+    {
+      "id": 1,
+      "item": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "amount": 4000
+    },
+    {
+      "id": 2,
+      "item": "Mens Casual Premium Slim Fit T-Shirts",
+      "amount": 1500
+    },
+    {
+      "id": 3,
+      "item": "Mens Cotton Jacket",
+      "amount": 3500
+    },
+    {
+      "id": 4,
+      "item": "Mens Casual Slim Fit",
+      "amount": 2000
+    },
+    {
+      "id": 5,
+      "item": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "amount": 24000
+    },
+    {
+      "id": 6,
+      "item": "Solid Gold Petite Micropave ",
+      "amount": 2400
+    },
+    {
+      "id": 7,
+      "item": "White Gold Plated Princess",
+      "amount": 5000
+    },
+    {
+      "id": 8,
+      "item": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "amount": 1800
+    },
+    {
+      "id": 9,
+      "item": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "amount": 8000
+    },
+    {
+      "id": 10,
+      "item": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "amount": 6000
+    },
+    {
+      "id": 11,
+      "item": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "amount": 4000
+    },
+    {
+      "id": 12,
+      "item": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "amount": 14000
+    },
+    {
+      "id": 13,
+      "item": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "amount": 84000
+    },
+    {
+      "id": 14,
+      "item": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "amount": 36000
+    },
+    {
+      "id": 15,
+      "item": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "amount": 4000
+    },
+    {
+      "id": 16,
+      "item": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "amount": 16000
+    },
+    {
+      "id": 17,
+      "item": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "amount": 2000
+    },
+    {
+      "id": 18,
+      "item": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "amount": "ksh 1000"
+    },
+    {
+      "id": 19,
+      "item": "Opna Women's Short Sleeve Moisture",
+      "amount": 2400
+    },
+    {
+      "id": 20,
+      "item": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "amount": 1000
+    }
+  ]
+}
