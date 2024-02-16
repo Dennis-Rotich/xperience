@@ -29,7 +29,7 @@ function App() {
       <h1 className='appTitle'>
         <span className='appHeader'>X</span>perience
       </h1>
-      <h3>Logged in as: {name}</h3>
+      <h3>Welcome {name}</h3>
       <Navbar products={products} setProducts={setProducts} />
       <br />
       <Routes>
