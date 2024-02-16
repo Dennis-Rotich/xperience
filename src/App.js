@@ -15,6 +15,15 @@ function App() {
   const [cartProducts,setCartProducts] = useState([]);
   const [name,setName] = useState('');
 
+  function handleReturn(){
+    fetch('https://fakestoreapi.com/products')
+    .then((res) => res.json())
+    .then((data) => {
+      setProducts(data);
+    })
+    .catch((err) => console.error(err));
+  }
+
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
       .then((res) => res.json())
@@ -30,7 +39,7 @@ function App() {
         <span className='appHeader'>X</span>perience
       </h1>
       <h3>Welcome {name}</h3>
-      <Navbar products={products} setProducts={setProducts} />
+      <Navbar products={products} setProducts={setProducts} handleReturn={handleReturn}/>
       <br />
       <Routes>
         <Route path='/' element={<Home products= {products} setProducts={setProducts} />} />

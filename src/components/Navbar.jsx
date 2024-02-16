@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 
-function Navbar({products,setProducts}){
+function Navbar({products,setProducts,handleReturn}){
     const [searchTerm,setSearchTerm] = useState('');
     const [findProducts,setFindProducts] = useState([])
 
@@ -32,6 +32,7 @@ function Navbar({products,setProducts}){
                 <input type="text" placeholder="search for product" name="search" onChange={handleChange}/>
                 <button type='submit'>Search</button>
             </form>
+            <button id="returnBtn" onClick={handleReturn}>Return All items</button>
         </nav>
     )
 }
