@@ -6,6 +6,8 @@ function Home({ products }) {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [filteredProducts, setFilteredProducts] = useState(products);
 
+
+
     useEffect(() => {
         if (selectedCategory) {
             const filtered = products.filter(product => product.category === selectedCategory);
