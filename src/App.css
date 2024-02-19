@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.navlink{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navlink:hover{
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#searchProduct{
+  float: right;
+  padding-right: 75px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.appHeader{
+  color: firebrick;
+}
+
+.appTitle{
+  padding-left: 2em;
+  color: darkslategray;
+}
+
+aside{
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: darkslategray;
+  width: 150px;
+  height: 100vh;
+  float: left;
+}
+
+.productList{
+  color: white;
+  text-decoration: none;
+  padding: 2em 10px 2em 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+.productList:hover{
+  text-decoration: underline;
+}
+
+.productDisplay{
+  display: inline-flex;
+  width: 20em;
+  height: 15em;
+  border: solid black 2px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: gray 2px 2px 2px 2px;
+}
+
+.productDisplay:hover{
+  scale: 1.1;
+}
+
+.productLink{
+    display: inline-flex;
+    width: 15em;
+    height: 10em;
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.productDetail{
+  height: 100px;
+}
+
+.productImage{
+  height: 200px;
+  width: 200px;
+}
+
+.navBtn{
+  margin-left: 10px;
+}
+
+.priceTag{
+  font-size: large;
+  font-weight: bold;
+}
+
+.goBackButton{
+  float: left;
+}
+
+.dropdown-toggle{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-toggle:hover{
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#returnBtn{
+  float: right;
 }
